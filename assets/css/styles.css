@@ -45,3 +45,8 @@ a {
 main {
     margin: 30px 15px;
 }
+
+.imgs {
+    width: 250px;
+    height: 150px;
+}
