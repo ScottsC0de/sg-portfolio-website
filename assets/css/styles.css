@@ -50,3 +50,18 @@ main {
     width: 250px;
     height: 150px;
 }
+
+@media screen and (max-width: 768px) {
+
+    /* put in colmumns
+    maybe a button for changing dark/light mode */
+    * {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
