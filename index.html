@@ -18,7 +18,7 @@
                 <li class="nav-list-items"><a href="#My Projects">My Projects</a></li>
                 <li class="nav-list-items"><a href="#Get In Touch">Get In Touch</a></li>
                 <!--maybe add tool tip or pop up "coming soon"-->
-                <li class="nav-list-items"><a href="#Resume">Resume</a></li>
+                <li class="nav-list-items" id="resume"><a href="#Resume">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -32,17 +32,17 @@
             <p id="about-me">
             <pre>
                 <code>
-                &lt;title&gt; Scott George &lt;/title&gt;<br>
-                &lt;header&gt; Aspiring Full Stack Web Developer &lt;/header&gt;<br>
-                &lt;p&gt;<br> 
-                    &lt;ul&gt;<br>
-                        &lt;li&gt; Currently enrolled in the UCONN coding bootcamp &lt;/li&gt;<br>
-                        &lt;li&gt; Learning HTML, CSS, and JavaScript among many other web development technologies &lt;/li&gt;<br>
-                        &lt;li&gt; Plan to develop useful applications that aid in the daily lives of the users &lt;/li&gt;<br>
-                        &lt;li&gt; Giant music fan &lt;/li&gt;<br>   
-                    &lt;/ul&gt;<br>
-                &lt;/p&gt;<br>
-                &lt;footer&gt; As always, I keep the coding happy. &lt;/footer&gt;
+                <span class="fake-tags">&lt;title&gt;</span> Scott George <span class="fake-tags">&lt;/title&gt;</span><br>
+                <span class="fake-tags">&lt;header&gt;</span> Aspiring Full Stack Web Developer <span class="fake-tags">&lt;/header&gt;</span><br>
+                <span class="fake-tags">&lt;p&gt;</span><br> 
+                    <span class="fake-tags">&lt;ul&gt;</span><br>
+                        <span class="fake-tags">&lt;li&gt;</span> Currently enrolled in the UCONN coding bootcamp <span class="fake-tags">&lt;/li&gt;</span><br>
+                        <span class="fake-tags">&lt;li&gt;</span> Learning HTML, CSS, and JavaScript among many other web development technologies <span class="fake-tags">&lt;/li&gt;</span><br>
+                        <span class="fake-tags">&lt;li&gt;</span> Plan to develop useful applications that aid in the daily lives of the users <span class="fake-tags">&lt;/li&gt;</span><br>
+                        <span class="fake-tags">&lt;li&gt;</span> Giant music fan <span class="fake-tags">&lt;/li&gt;</span><br>   
+                    <span class="fake-tags">&lt;/ul&gt;</span><br>
+                <span class="fake-tags">&lt;/p&gt;</span><br>
+                <span class="fake-tags">&lt;footer&gt;</span> As always, I keep the coding happy. <span class="fake-tags">&lt;/footer&gt;</span>
             </code>
             </pre>
             </p>
@@ -51,29 +51,44 @@
 
         <section class="content-sections" id="My Projects">
             <h2 class="content-headers">▶ My Projects</h2>
-            <figure id="big-fig">
-                <!--make image 1 bigger than the rest-->
-                <img src="assets/images/piano.png" alt="Piano icon for music chord webpage" id="big-app-img"
-                    width="300px" height="300px">
-                <figcaption class="fig-captions">HTML/CSS Music Chord Database Webpage</figcaption>
-            </figure>
+            <div id="big-fig">
+                <div class="float-left">
+                    <!--make image 1 bigger than the rest-->
+                    <img src="assets/images/piano.png" alt="Piano icon for music chord webpage" id="big-app-img"
+                        width="300px" height="300px">
+                </div>
+                <div class="float-right">
+                    <h2 class="fig-headers">HTML/CSS Music Chord Database Webpage</h2>
+                    <p>text</p>
+                </div>
+            </div>
+
+
+
+
+
             <figure class="small-figs">
                 <img src="assets/images/semantic-site.png" alt="Accessible and semantic HTML/CSS webpage screenshot"
-                    class="imgs">
+                    class="app-imgs">
                 <figcaption class="fig-captions">Accessible and Semantic HTML/CSS Webpage</figcaption>
             </figure>
+
+
+
+
             <figure class="small-figs">
-                <img src="assets/images/password-icon.png" alt="Lock icon for password generator webpage" class="imgs">
+                <img src="assets/images/password-icon.png" alt="Lock icon for password generator webpage"
+                    class="app-imgs">
                 <figcaption class="fig-captions">JavaScript Password Generator</figcaption>
             </figure>
             <figure class="small-figs">
                 <img src="assets/images/quote-icon.png" alt="Quotation mark icon for random quote generator webpage"
-                    class="imgs">
+                    class="app-imgs">
                 <figcaption class="fig-captions">Random Motivational Quote Generator</figcaption>
             </figure>
             <figure class="small-figs">
                 <img src="assets/images/drums.jpg" alt="Drum set picture for my professional drumming webpage"
-                    class="imgs">
+                    class="app-imgs">
                 <figcaption class="fig-captions">My Drumming Webpage</figcaption>
             </figure>
         </section>

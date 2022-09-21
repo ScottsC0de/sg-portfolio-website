@@ -1,3 +1,16 @@
+:root {
+    --outer-space: #33393f;
+    --fake-html-text: #e0eae4;
+    --fake-html-tags: #2aefcb;
+    --heliotrope: #e866ec;
+}
+
+/* set content highlight color and background */
+::selection {
+    background-color: var(--fake-html-tags);
+    color: var(--outer-space);
+}
+
 * {
     /* inclues padding/border in total page box */
     box-sizing: border-box;
@@ -46,15 +59,63 @@ main {
     margin: 30px 15px;
 }
 
-.imgs {
-    width: 250px;
-    height: 150px;
+code {
+    color: var(--fake-html-text);
+}
+
+#big-fig {
+    padding: 20px;
+    width: 100%;
+}
+
+.float-left {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+}
+
+.float-right {
+    float: left;
+    width: 50%;
+    height: 50%;
+    border: 1px solid white;
+}
+
+.fake-tags {
+    color: var(--fake-html-tags);
+}
+
+.fake-text {
+    color: var(--fake-html-text);
+}
+
+#my-pic {
+    cursor: pointer;
+}
+
+#big-app-img {
+    cursor: pointer;
+}
+
+/* change name to "app-imgs" */
+.app-imgs {
+    width: 350px;
+    height: 300px;
+    cursor: pointer;
+}
+
+
+/* The Checkbox Hack */
+#resume:checked {
+    content: "Coming Soon!";
 }
 
 @media screen and (max-width: 768px) {
 
     /* put in colmumns
-    maybe a button for changing dark/light mode */
+    maybe a button for changing dark/light mode
+    fix pre text */
     * {
         display: flex;
         flex-direction: column;
@@ -63,5 +124,11 @@ main {
     nav ul {
         display: flex;
         flex-direction: column;
+    }
+
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: center;
     }
 }
