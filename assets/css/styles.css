@@ -1,16 +1,19 @@
 /* Google is your best friend */
 
 :root {
-    --outer-space: #33393f;
-    --fake-html-text: #e0eae4;
-    --fake-html-tags: #2aefcb;
-    --heliotrope: #e866ec;
+    --html-text: #e0eae4;
+    --html-tags: #2aefcb;
+    --code-comments: #707f8e;
+    --code-green: rgb(42, 123, 42);
+    --code-yellow: yellow;
+    --code-pink: #e866ec;
+    --code-orange: rgba(250, 162, 0, 0.828)
 }
 
-/* set content highlight color and background */
+/* opposite of page background and font color */
 ::selection {
-    background-color: var(--fake-html-tags);
-    color: var(--outer-space);
+    background-color: var(--html-tags);
+    color: black;
 }
 
 * {
@@ -26,7 +29,7 @@ body {
     letter-spacing: 2px;
     line-height: 2.0;
     background-color: black;
-    color: #2aefcb;
+    color: var(--html-tags);
     /* CLI text color
     color: rgb(42, 123, 42); */
 }
@@ -56,7 +59,7 @@ nav ul {
 
 a {
     text-decoration: none;
-    color: var(--fake-html-tags);
+    color: var(--html-tags);
 }
 
 main {
@@ -64,21 +67,23 @@ main {
 }
 
 figcaption {
-    color: var(--fake-html-text);
+    color: var(--html-text);
 }
 
 code {
-    color: var(--fake-html-text);
+    color: var(--html-text);
 }
 
 .fake-tags {
-    color: var(--fake-html-tags);
+    color: var(--html-tags);
 }
 
 #my-pic {
+    /* changes cursor to pointer finger */
     cursor: pointer;
 }
 
+/* first app with the piano icon */
 #big-fig {
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +92,13 @@ code {
     border-radius: 30px;
 }
 
+/* adds glow when user hovers cursor */
+#big-fig:hover {
+    box-shadow: 0px 0px 100px 0px var(--html-tags);
+    transition: .7s ease;
+}
+
+/* piano icon */
 #big-app-img {
     cursor: pointer;
 }
@@ -95,6 +107,7 @@ code {
     width: 30%;
 }
 
+/* first of the two smaller figures */
 #small-fig-top {
     display: flex;
     flex-wrap: wrap;
@@ -102,11 +115,7 @@ code {
     border: 2.5px;
 }
 
-#big-fig:hover {
-    box-shadow: 0px 0px 100px 0px var(--fake-html-tags);
-    transition: .7s ease;
-}
-
+/* second of the two smaller figures */
 #small-fig-bott {
     display: flex;
     flex-wrap: wrap;
@@ -114,6 +123,7 @@ code {
     border: 2.5px;
 }
 
+/* Accessible Webpage and Quote Generator blocks */
 .small-fig-left {
     display: flex;
     flex-wrap: wrap;
@@ -125,11 +135,13 @@ code {
     border-radius: 30px;
 }
 
+/* adds glow */
 .small-fig-left:hover {
-    box-shadow: 0px 0px 100px 0px var(--fake-html-tags);
+    box-shadow: 0px 0px 100px 0px var(--html-tags);
     transition: .7s ease;
 }
 
+/* Password Generator & Drumming Webpage blocks */
 .small-fig-right {
     display: flex;
     flex-wrap: wrap;
@@ -141,28 +153,34 @@ code {
     border-radius: 30px;
 }
 
+/* adds glow */
 .small-fig-right:hover {
-    box-shadow: 0px 0px 100px 0px var(--fake-html-tags);
+    box-shadow: 0px 0px 100px 0px var(--html-tags);
     transition: .7s ease;
 }
 
+/* Accessible Webpage and Quote Generator icons */
 .small-left-img {
     padding: 10px;
     width: 30%;
 }
 
+/* Accessible Webpage and Quote Generator text */
 .small-left-text {
     text-align: center;
 }
 
-.small-right-text {
-    text-align: center;
-}
-
+/* Password Generator & Drumming Webpage icons */
 .small-right-img {
     padding: 10px;
 }
 
+/* Password Generator & Drumming Webpage text */
+.small-right-text {
+    text-align: center;
+}
+
+/* all app icons */
 .app-imgs {
     width: 250px;
     height: 200px;
@@ -170,11 +188,7 @@ code {
     cursor: pointer;
 }
 
-/* The Checkbox Hack */
-#resume:checked {
-    content: "Coming Soon!";
-}
-
+/* contact info */
 #bott-nav-bar ul {
     display: flex;
     flex-wrap: wrap;
@@ -183,20 +197,33 @@ code {
     justify-content: space-between;
 }
 
-.js-var-color1 {
-    color: yellow;
+/* coding color for js variable keywords, functions, and css classes */
+.code-color1 {
+    color: var(--code-yellow);
 }
 
-.js-var-color2 {
-    color: #e866ec;
+/* coding color for js variable names */
+.code-color2 {
+    color: var(--code-pink);
 }
 
-.js-var-color3 {
-    color: rgba(250, 162, 0, 0.828);
+/* coding color for js strings and css propery values */
+.code-color3 {
+    color: var(--code-orange);
 }
 
-.js-var-color4 {
-    color: #2aefcb;
+/* coding color for html tags, js numbers, function names, and css properties */
+.code-color4 {
+    color: var(--html-tags);
+}
+
+/* code comment color */
+.code-color5 {
+    color: var(--code-comments)
+}
+
+#drums {
+    color: rgb(65, 168, 246);
 }
 
 @media screen and (max-width: 768px) {
