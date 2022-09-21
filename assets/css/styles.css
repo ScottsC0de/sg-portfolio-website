@@ -63,48 +63,59 @@ code {
     color: var(--fake-html-text);
 }
 
-#big-fig {
-    padding: 20px;
-    width: 100%;
-}
-
-.float-left {
-    float: left;
-    width: 50%;
-    height: 50%;
-    border: 1px solid white;
-}
-
-.float-right {
-    float: left;
-    width: 50%;
-    height: 50%;
-    border: 1px solid white;
-}
-
 .fake-tags {
     color: var(--fake-html-tags);
-}
-
-.fake-text {
-    color: var(--fake-html-text);
 }
 
 #my-pic {
     cursor: pointer;
 }
 
-#big-app-img {
+#big-fig {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 5px solid var(--fake-html-text);
     cursor: pointer;
 }
 
-/* change name to "app-imgs" */
+#piano-box {
+    width: 30%;
+}
+
+#small-fig-top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2.5px solid var(--fake-html-text);
+    cursor: pointer;
+}
+
+#small-fig-bott {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2.5px solid var(--fake-html-text);
+    cursor: pointer;
+}
+
+.small-fig-left {
+    padding: 10px;
+    width: 50%;
+    border: 2.5px solid var(--fake-html-text);
+}
+
+.small-fig-right {
+    padding: 10px;
+    width: 50%;
+    border: 2.5px solid var(--fake-html-text);
+}
+
 .app-imgs {
-    width: 350px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     cursor: pointer;
 }
-
 
 /* The Checkbox Hack */
 #resume:checked {
