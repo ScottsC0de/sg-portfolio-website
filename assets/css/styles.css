@@ -74,13 +74,14 @@ code {
     color: var(--html-text);
 }
 
-.fake-tags {
-    color: var(--html-tags);
-}
-
 #my-pic {
     /* changes cursor to pointer finger */
     cursor: pointer;
+}
+
+/* fake html tag color in the about me section */
+.fake-tags {
+    color: var(--html-tags);
 }
 
 /* first app with the piano icon */
@@ -98,13 +99,22 @@ code {
     transition: .7s ease;
 }
 
+/* piano icon box */
+#piano-box {
+    width: 30%;
+}
+
 /* piano icon */
-#big-app-img {
+#piano-img {
     cursor: pointer;
 }
 
-#piano-box {
-    width: 30%;
+/* all app icons besides piano */
+.app-imgs {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 /* first of the two smaller figures */
@@ -173,19 +183,12 @@ code {
 /* Password Generator & Drumming Webpage icons */
 .small-right-img {
     padding: 10px;
+    width: 30%;
 }
 
 /* Password Generator & Drumming Webpage text */
 .small-right-text {
     text-align: center;
-}
-
-/* all app icons */
-.app-imgs {
-    width: 250px;
-    height: 200px;
-    border-radius: 20px;
-    cursor: pointer;
 }
 
 /* contact info */
