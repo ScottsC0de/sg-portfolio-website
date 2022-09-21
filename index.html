@@ -12,6 +12,7 @@
 <body>
     <header>
         <h1 id="header-name">Scott George</h1>
+        <img src="assets/images/me-pic.JPG" alt="A great picture of me" id="my-pic" width="100" height="100">
         <nav id="top-nav-bar">
             <ul id="nav-list">
                 <li class="nav-list-items"><a href="#Hello World!">Hello World!</a></li>
@@ -24,11 +25,12 @@
     </header>
 
     <main>
-        <img src="assets/images/me-pic.JPG" alt="A great picture of me" id="my-pic" width="200" height="200">
+
+        <!--did not include hero image for faster load speed-->
 
         <!--style text to look like HTML-->
         <section class="content-sections" id="Hello World!">
-            <h2 class="content-headers">▶ Hello World!</h2>
+            <h2 class="content-headers">// Hello World!</h2>
             <p id="about-me">
             <pre>
                 <code>
@@ -51,30 +53,35 @@
 
         <!--style text to look like CSS-->
         <section class="content-sections" id="My Projects">
-            <h2 class="content-headers">▶ My Projects</h2>
+            <h2 class="content-headers">// My Projects</h2>
 
             <!--divvy it up-->
             <figure id="big-fig">
                 <div id="piano-box">
-                    <!--make image 1 bigger than the rest-->
+                    <!--make figure 1 bigger than the rest-->
                     <img src="assets/images/piano.png" alt="Piano icon for music chord website" id="big-app-img"
                         width="300px" height="300px">
                 </div>
                 <div id="piano-text-box">
                     <h2 class="fig-headers">Music Chord Database</h2>
-                    <p>text</p>
+                    <code>
+                    <p>.site-1 {</p><p>purpose: look up any music chord;</p><p>/* piano and guitar chords */</p><p>}</p>
+                    </code>
                 </div>
             </figure>
 
             <figure id="small-fig-top">
                 <div class="small-fig-left">
                     <div class="small-left-img">
-                        <img src="assets/images/semantic-site.png"
-                            alt="Accessible and semantic HTML/CSS webpage screenshot" class="app-imgs">
+                        <a href="https://scottsc0de.github.io/semantic-accessible-page/"><img
+                                src="assets/images/semantic-site.png"
+                                alt="Accessible and semantic HTML/CSS webpage screenshot" class="app-imgs"></a>
                     </div>
-                    <div id="small-left-text">
-                        <h2 class="fig-headers">Accessible and Semantic Webpage</h2>
-                        <p>text</p>
+                    <div class="small-left-text">
+                        <h3 class="fig-headers">Accessible Webpage</h3>
+                        <code>
+                            <p>.site-2 {</p><p>purpose: accessible webpage example;</p><p>/* this code was refactored */</p><p>}</p>
+                            </code>
                     </div>
                 </div>
 
@@ -83,9 +90,11 @@
                         <img src="assets/images/password-icon.png" alt="Lock icon for password generator webpage"
                             class="app-imgs">
                     </div>
-                    <div id="small-right-text">
-                        <h2 class="fig-headers">JavaScript Password Generator</h2>
-                        <p>text</p>
+                    <div class="small-right-text">
+                        <h3 class="fig-headers">Password Generator</h3>
+                        <code>
+                            <p>.site-3 {</p><p>purpose: generate a new password;</p><p>/* uses JavaScript */</p><p>}</p>
+                            </code>
                     </div>
                 </div>
             </figure>
@@ -96,9 +105,11 @@
                         <img src="assets/images/quote-icon.png"
                             alt="Quotation mark icon for a motivation quote generator webpage" class="app-imgs">
                     </div>
-                    <div id="small-left-text">
-                        <h2 class="fig-headers">Random Motivational Quote Generator</h2>
-                        <p>text</p>
+                    <div class="small-left-text">
+                        <h3 class="fig-headers">Random Quote Generator</h3>
+                        <code>
+                            <p>.site-4 {</p><p>purpose: generate random quotes;</p><p>/* quotes are motivational */</p><p>}</p>
+                            </code>
                     </div>
                 </div>
 
@@ -107,25 +118,34 @@
                         <img src="assets/images/drums.jpg" alt="Drum set image for my professional drumming website"
                             class="app-imgs">
                     </div>
-                    <div id="small-right-text">
-                        <h2 class="fig-headers">My Drumming Webpage</h2>
-                        <p>text</p>
+                    <div class="small-right-text">
+                        <h3 class="fig-headers">My Drumming Webpage</h3>
+                        <code>
+                            <p>#drums {</p><p>purpose: display drumming content;</p><p>/* drumming videos, news, & merch */</p><p>}</p>
+                            </code>
                     </div>
                 </div>
             </figure>
         </section>
 
-        <!--style text to looks like JavaScript-->
+        <!--style text to look like JavaScript-->
         <footer id="Get In Touch">
             <section id="contact-info">
-                <h2 class="content-headers">▶ Get In Touch</h2>
-                <p id="footer-text">Get to know, stay in touch.</p>
+                <h2 class="content-headers">// Get In Touch</h2>
+                <!--<p id="footer-text">Get to know, stay in touch.</p>-->
                 <nav id="bott-nav-bar">
                     <ul id="contact-links">
-                        <li class="contact-list-items"><a href="#Email">Email</a></li>
-                        <li class="contact-list-items"><a href="#Phone">Phone Number</a></li>
-                        <li class="contact-list-items"><a href="#LinkedIn">LinkedIn</a></li>
-                        <li class="contact-list-items"><a href="#GitHub">GitHub</a></li>
+                        <code>
+                        <li class="contact-list-items"><span class="js-var-color1">var</span><span class="js-var-color2">
+                                email</span> = <a href="Email"><span
+                                    class="js-var-color3">"Scott5902@gmail.com"</span></a></li>
+                        <li class="contact-list-items"><span class="js-var-color1">const</span><span
+                                class="js-var-color2"> phoneNumber</span> = <a href="#Phone"><span
+                                    class="js-var-color4">203-589-3259</span></a></li>
+                        <li class="contact-list-items"><span class="js-var-color1">function </span><a href="#LinkedIn">linkedIn<span class="js-var-color1">(<span class="js-var-color2">coming, soon</span>)</span></a></li>
+                        <li class="contact-list-items"><span class="js-var-color1">function </span><a
+                                href="https://github.com/ScottsC0de?tab=repositories" target="_blank">gitHub<span class="js-var-color1">(<span class="js-var-color2">click</span>)</span></a></li>
+                            </code>
                     </ul>
                 </nav>
             </section>

@@ -1,3 +1,5 @@
+/* Google is your best friend */
+
 :root {
     --outer-space: #33393f;
     --fake-html-text: #e0eae4;
@@ -25,7 +27,7 @@ body {
     line-height: 2.0;
     background-color: black;
     color: #2aefcb;
-    /* cli text color
+    /* CLI text color
     color: rgb(42, 123, 42); */
 }
 
@@ -79,6 +81,9 @@ code {
     flex-direction: row;
     border: 5px;
     border-radius: 30px;
+}
+
+#big-app-img {
     cursor: pointer;
 }
 
@@ -91,7 +96,6 @@ code {
     flex-wrap: wrap;
     flex-direction: row;
     border: 2.5px;
-    cursor: pointer;
 }
 
 #big-fig:hover {
@@ -104,10 +108,13 @@ code {
     flex-wrap: wrap;
     flex-direction: row;
     border: 2.5px;
-    cursor: pointer;
 }
 
 .small-fig-left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
     width: 50%;
     border: 2.5px;
@@ -120,6 +127,10 @@ code {
 }
 
 .small-fig-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
     width: 50%;
     border: 2.5px;
@@ -133,6 +144,15 @@ code {
 
 .small-left-img {
     padding: 10px;
+    width: 30%;
+}
+
+.small-left-text {
+    text-align: center;
+}
+
+.small-right-text {
+    text-align: center;
 }
 
 .small-right-img {
@@ -142,12 +162,37 @@ code {
 .app-imgs {
     width: 250px;
     height: 200px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 /* The Checkbox Hack */
 #resume:checked {
     content: "Coming Soon!";
+}
+
+#bott-nav-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.js-var-color1 {
+    color: yellow;
+}
+
+.js-var-color2 {
+    color: #e866ec;
+}
+
+.js-var-color3 {
+    color: rgba(250, 162, 0, 0.828);
+}
+
+.js-var-color4 {
+    color: #2aefcb;
 }
 
 @media screen and (max-width: 768px) {
