@@ -63,6 +63,10 @@ main {
     margin: 30px 15px;
 }
 
+figcaption {
+    color: var(--fake-html-text);
+}
+
 code {
     color: var(--fake-html-text);
 }
