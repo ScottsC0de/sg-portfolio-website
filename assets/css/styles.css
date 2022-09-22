@@ -1,5 +1,7 @@
 /* :root represents the html tag, meaning the whole document 
     created variables for colors used throughout */
+
+/* wanted to give document a coding feel */
 :root {
     --html-text: #e0eae4;
     --html-tags: #2aefcb;
@@ -102,6 +104,8 @@ code {
 
 /* piano icon box */
 #piano-box {
+    /* overflow: auto helps with responsiveness 
+    helped me fix content overlapping when resizing browser */
     overflow: auto;
 }
 
@@ -267,13 +271,14 @@ code {
         align-items: center;
     }
 
+    /* these properties help with formatting preformatted text when resizing */
     pre {
         white-space: pre-wrap;
         word-wrap: break-word;
         text-align: center;
     }
 
-
+    /* added borders for project sections on smaller screen */
     #big-fig {
         display: flex;
         flex-direction: column;
