@@ -295,13 +295,22 @@ code {
     .small-right-text {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .small-left-img,
+    .small-right-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
 
     #piano-img {
         width: 210px;
         height: 210px;
-        margin-left: 65px;
+        margin-left: 20px;
         margin-bottom: 10px;
     }
 
@@ -313,7 +322,87 @@ code {
         width: 100px;
         height: 100px;
         margin-top: 10px;
-        margin-left: 36px;
+        margin-left: 16px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        width: 100%;
+    }
+
+}
+
+/* for smartphone (smaller) viewport */
+@media screen and (max-width: 576px) {
+
+    /* put in colmumns
+    resize app images
+    align in center
+    fix pre text */
+    * {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        margin-left: 25%;
+        align-items: center;
+    }
+
+    #my-pic {
+        margin-left: 25%;
+    }
+
+    h2 {
+        align-items: center;
+    }
+
+    /* these properties help with formatting preformatted text when resizing */
+    pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    /* added borders for project sections on smaller screen */
+    #big-fig {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        border: 1.5px solid var(--code-comments);
+    }
+
+    .small-fig-left,
+    .small-fig-right {
+        border: 1.5px groove var(--code-comments);
+    }
+
+    .small-left-text,
+    .small-right-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #piano-img {
+        width: 210px;
+        height: 210px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #piano-text {
+        align-items: center;
+    }
+
+    .app-imgs {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 16px;
     }
 
     .contact-info {
