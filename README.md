@@ -23,11 +23,6 @@ GitHub Repository:
 
     *
 
-
-## Video
-
-![alt text](assets/videos/site-vid.mov)
-
 ## Screenshots
 
 ![alt text](assets/images/port-screenshot1.png)
