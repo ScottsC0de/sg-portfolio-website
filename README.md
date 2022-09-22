@@ -17,11 +17,11 @@ Upon clicking the link to the webpage (see "Links" below), the user will be dire
 
 Webiste URL:
 
-    *
+    * https://scottsc0de.github.io/sg-portfolio-website/
 
 GitHub Repository:
 
-    *
+    * https://github.com/ScottsC0de/sg-portfolio-website
 
 ## Screenshots
 
