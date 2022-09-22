@@ -102,12 +102,17 @@ code {
 
 /* piano icon box */
 #piano-box {
-    width: 30%;
+    overflow: auto;
 }
 
 /* piano icon */
 #piano-img {
     cursor: pointer;
+}
+
+#piano-text {
+    padding-top: 10px;
+    padding-left: 50px;
 }
 
 /* all app icons besides piano */
@@ -144,6 +149,7 @@ code {
     width: 50%;
     border: 2.5px;
     border-radius: 30px;
+    overflow: auto;
 }
 
 /* adds glow */
@@ -162,6 +168,7 @@ code {
     width: 50%;
     border: 2.5px;
     border-radius: 30px;
+    overflow: auto;
 }
 
 /* adds glow */
@@ -174,22 +181,22 @@ code {
    Combining classes messed with spacing */
 .small-left-img {
     padding: 10px;
-    width: 30%;
 }
 
 /* Accessible Webpage and Quote Generator text */
 .small-left-text {
+    width: 50%;
     text-align: center;
 }
 
 /* Password Generator & Drumming Webpage icons */
 .small-right-img {
     padding: 10px;
-    width: 30%;
 }
 
 /* Password Generator & Drumming Webpage text */
 .small-right-text {
+    width: 50%;
     text-align: center;
 }
 
@@ -277,6 +284,13 @@ code {
     .small-fig-left,
     .small-fig-right {
         border: 1.5px groove var(--code-comments);
+    }
+
+    .small-left-text,
+    .small-right-text {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     #piano-img {
