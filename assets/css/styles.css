@@ -1,16 +1,17 @@
 /* Google is your best friend */
 
+/* :root represents the html tag */
 :root {
     --html-text: #e0eae4;
     --html-tags: #2aefcb;
-    --code-comments: #707f8e;
     --code-green: rgb(42, 123, 42);
     --code-yellow: yellow;
     --code-pink: #e866ec;
-    --code-orange: rgba(250, 162, 0, 0.828)
+    --code-orange: rgba(250, 162, 0, 0.828);
+    --code-comments: #707f8e;
 }
 
-/* opposite of page background and font color */
+/* for highlighting, opposite of page background and font color */
 ::selection {
     background-color: var(--html-tags);
     color: black;
@@ -70,18 +71,19 @@ figcaption {
     color: var(--html-text);
 }
 
+/* code tag used for presenting code text in HTML */
 code {
     color: var(--html-text);
-}
-
-#my-pic {
-    /* changes cursor to pointer finger */
-    cursor: pointer;
 }
 
 /* fake html tag color in the about me section */
 .fake-tags {
     color: var(--html-tags);
+}
+
+#my-pic {
+    /* changes cursor to pointer finger */
+    cursor: pointer;
 }
 
 /* first app with the piano icon */
