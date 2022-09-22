@@ -243,7 +243,7 @@ code {
 }
 
 
-/* for smartphone (smaller) viewport */
+/* for tablet (smaller) viewport */
 @media screen and (max-width: 768px) {
 
     /* put in colmumns
@@ -335,10 +335,6 @@ code {
 /* for smartphone (smaller) viewport */
 @media screen and (max-width: 576px) {
 
-    /* put in colmumns
-    resize app images
-    align in center
-    fix pre text */
     * {
         display: flex;
         flex-direction: column;
@@ -358,14 +354,12 @@ code {
         align-items: center;
     }
 
-    /* these properties help with formatting preformatted text when resizing */
     pre {
         white-space: pre-wrap;
         word-wrap: break-word;
         text-align: center;
     }
 
-    /* added borders for project sections on smaller screen */
     #big-fig {
         display: flex;
         flex-direction: column;
