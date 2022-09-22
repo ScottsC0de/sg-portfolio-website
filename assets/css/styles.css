@@ -1,6 +1,5 @@
-/* Google is your best friend */
-
-/* :root represents the html tag */
+/* :root represents the html tag, meaning the whole document 
+    created variables for colors used throughout */
 :root {
     --html-text: #e0eae4;
     --html-tags: #2aefcb;
@@ -91,7 +90,7 @@ code {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    border: 5px;
+    border: 2.5px;
     border-radius: 30px;
 }
 
@@ -171,7 +170,8 @@ code {
     transition: .7s ease;
 }
 
-/* Accessible Webpage and Quote Generator icons */
+/* Accessible Webpage and Quote Generator icons
+   Combining classes messed with spacing */
 .small-left-img {
     padding: 10px;
     width: 30%;
@@ -191,15 +191,6 @@ code {
 /* Password Generator & Drumming Webpage text */
 .small-right-text {
     text-align: center;
-}
-
-/* contact info */
-#bott-nav-bar ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
 }
 
 /* coding color for js variable keywords, functions, and css classes */
@@ -231,19 +222,42 @@ code {
     color: rgb(65, 168, 246);
 }
 
+/* for laptops */
+@media screen and (max-width: 992px) {
+
+    #big-fig {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
+}
+
+
+/* for smartphone (smaller) viewport */
 @media screen and (max-width: 768px) {
 
     /* put in colmumns
-    maybe a button for changing dark/light mode
+    resize app images
+    align in center
     fix pre text */
     * {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
+    header {
+        margin-left: 25%;
+        align-items: center;
+    }
+
+    #my-pic {
+        margin-left: 25%;
+    }
+
+    h2 {
+        align-items: center;
     }
 
     pre {
@@ -251,4 +265,43 @@ code {
         word-wrap: break-word;
         text-align: center;
     }
+
+
+    #big-fig {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        border: 1.5px solid var(--code-comments);
+    }
+
+    .small-fig-left,
+    .small-fig-right {
+        border: 1.5px groove var(--code-comments);
+    }
+
+    #piano-img {
+        width: 210px;
+        height: 210px;
+        margin-left: 65px;
+        margin-bottom: 10px;
+    }
+
+    #piano-text {
+        align-items: center;
+    }
+
+    .app-imgs {
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 36px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        width: 100%;
+    }
+
 }
