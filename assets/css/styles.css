@@ -92,6 +92,8 @@ code {
     flex-direction: row;
     border: 2.5px;
     border-radius: 30px;
+    width: 1000px;
+    height: 300px;
 }
 
 /* adds glow when user hovers cursor */
@@ -101,18 +103,18 @@ code {
 }
 
 /* piano icon box */
-#piano-box {
+#big-app-box {
     /* overflow: auto helps with responsiveness 
     helped me fix content overlapping when resizing browser */
     overflow: auto;
 }
 
 /* piano icon */
-#piano-img {
+#weather-img {
     cursor: pointer;
 }
 
-#piano-text {
+#weather-text {
     padding-top: 10px;
     padding-left: 50px;
 }
