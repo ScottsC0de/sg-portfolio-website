@@ -22,6 +22,7 @@ GitHub Repository: https://github.com/ScottsC0de/sg-portfolio-website
 ## Screenshots
 
 ![alt text](assets/images/port-screenshot1.png)
+![alt text](assets/images/port-screenshot2.png)
 ![alt text](assets/images/updated-pic1.png)
 ![alt text](assets/images/updated-pic2.png)
 ![alt text](assets/images/updated-pic3.png)
