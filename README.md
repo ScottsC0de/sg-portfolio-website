@@ -26,6 +26,6 @@ GitHub Repository:
 ## Screenshots
 
 ![alt text](assets/images/port-screenshot1.png)
-![alt text](assets/images/port-screenshot2.png)
-![alt text](assets/images/port-screenshot3.png)
-![alt text](assets/images/port-screenshot4.png)
+![alt text](assets/images/updated-pic1.png)
+![alt text](assets/images/updated-pic2.png)
+![alt text](assets/images/updated-pic3.png)
