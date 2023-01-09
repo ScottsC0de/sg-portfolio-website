@@ -110,11 +110,11 @@ code {
 }
 
 /* piano icon */
-#weather-img {
+#venue-img {
     cursor: pointer;
 }
 
-#weather-text {
+#venue-text {
     padding-top: 10px;
     padding-left: 50px;
 }
@@ -307,14 +307,14 @@ code {
         width: 100%;
     }
 
-    #weather-img {
+    #venue-img {
         width: 210px;
         height: 210px;
         margin-left: 20px;
         margin-bottom: 10px;
     }
 
-    #weather-text {
+    #venue-text {
         align-items: center;
     }
 
@@ -381,14 +381,12 @@ code {
         width: 100%;
     }
 
-    #weather-img {
-        width: 210px;
-        height: 210px;
+    #venue-img {
         margin-left: 20px;
         margin-bottom: 10px;
     }
 
-    #weather-text {
+    #venue-text {
         align-items: center;
     }
 
